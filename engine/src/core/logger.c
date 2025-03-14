@@ -3,12 +3,16 @@
 #include <stdio.h>
 #include <string.h>
 #include "asserts.h"
+#include "../platform/platform.h"
+
 
 b8 initialize_logging() {
   b8 result = TRUE;
   return result;
 }
-void shutdown_logging() {}
+
+void shutdown_logging() {
+}
 
 void log_output(log_level level, const char *message, ...) {
   const char *level_strings[6] = {
@@ -22,8 +26,16 @@ void log_output(log_level level, const char *message, ...) {
   va_end(arg_ptr);
   char out_message2[32000];
   sprintf(out_message2, "%s%s\n", level_strings[level], out_message);
-  printf("%s", out_message2);
+  if (is_error) {
+    platform_console_write_error(out_message2, level);
+  } else {
+    platform_console_write(out_message2, level);
+  }
+  //printf("%s", out_message2);
 }
-void report_assertion_failure(const char * expression,const char * message,const char * file, int line) {
-  log_output(LOG_LEVEL_FATAL,"Assertion Failure: %s, message: '%s',in file: '%s' , line: %d\n",expression,message,file,line);
+
+void report_assertion_failure(const char *expression, const char *message, const char *file,
+                              int line) {
+  log_output(LOG_LEVEL_FATAL, "Assertion Failure: %s, message: '%s',in file: '%s' , line: %d\n",
+             expression, message, file, line);
 }

@@ -24,12 +24,12 @@ add_library(engine SHARED ${SOURCES})
 
 #Link libraries
 target_link_libraries(engine vulkan xcb X11
-        #X11 - xcb
+        X11-xcb
         xkbcommon)
 link_directories(/usr/lib/x86_64-linux-gnu/libX11-xcb)
 
 #Set library search paths
-link_directories(${VULKAN_SDK} / lib / usr / X11R6 / lib)
+link_directories(${VULKAN_SDK}/lib/usr/X11R6/lib)
 
 #Set define flags
 target_compile_definitions(engine PRIVATE _DEBUG DKEXPORT)

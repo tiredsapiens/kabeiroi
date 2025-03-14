@@ -25,6 +25,7 @@ add_executable(testbed ${SOURCES})
 include_directories(#testbed PUBLIC
         ../engine/src/core
         ${CMAKE_CURRENT_SOURCE_DIR}/../engine/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/../engine/platform
 )
 #target_sources(testbed PRIVATE ../engine/src/core/logger.h ../engine/src/core/logger.c)
 

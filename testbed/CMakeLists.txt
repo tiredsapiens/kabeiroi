@@ -26,6 +26,7 @@ include_directories(#testbed PUBLIC
         ../engine/src/core
         ${CMAKE_CURRENT_SOURCE_DIR}/../engine/src
         ${CMAKE_CURRENT_SOURCE_DIR}/../engine/platform
+        ${CMAKE_CURRENT_SOURCE_DIR}/../engine/core
 )
 #target_sources(testbed PRIVATE ../engine/src/core/logger.h ../engine/src/core/logger.c)
 

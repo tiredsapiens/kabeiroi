@@ -1,10 +1,9 @@
 #include "logger.h"
+#include "../platform/platform.h"
+#include "asserts.h"
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#include "asserts.h"
-#include "../platform/platform.h"
-
 
 b8 initialize_logging() {
   b8 result = TRUE;
@@ -31,7 +30,7 @@ void log_output(log_level level, const char *message, ...) {
   } else {
     platform_console_write(out_message2, level);
   }
-  //printf("%s", out_message2);
+  // printf("%s", out_message2);
 }
 
 void report_assertion_failure(const char *expression, const char *message, const char *file,

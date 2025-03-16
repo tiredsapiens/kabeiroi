@@ -1,12 +1,16 @@
 #pragma once
-#include <defines.h>
-#include <game_types.h>
+//#include <defines.h>
+//#include <game_types.h>
+#include "../../engine/src/defines.h"
 
-typedef struct game_state{
+#include "../../engine/src/game_types.h"
+
+typedef struct game_state
+{
     f32 delta_time;
-}game_state;
+} game_state;
 
 b8 game_initialize(game* game_inst);
 b8 game_update(game* game_inst, f32 delta_time);
-b8 game_render(game* game_inst,f32 delta_time);
-void game_on_resize(game* game_inst,u32 width,u32 height);
+b8 game_render(game* game_inst, f32 delta_time);
+void game_on_resize(game* game_inst, u32 width, u32 height);

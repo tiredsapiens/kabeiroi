@@ -2,6 +2,8 @@
 #include "../platform/platform.h"
 #include "logger.h"
 #include "game_types.h"
+#include  "core/kmemeory.h"
+
 typedef struct application_state {
   game *game_inst;
   b8 is_running;
@@ -51,6 +53,7 @@ b8 application_create(game *game_inst) {
 }
 
 b8 application_run() {
+  KINFO(get_memory_usage_str());
   while (app_state.is_running) {
     if (!platform_pump_messages(&app_state.platform)) {
       app_state.is_running = FALSE;
@@ -61,7 +64,7 @@ b8 application_run() {
         app_state.is_running = FALSE;
         break;
       }
-      if(!app_state.game_inst->render(app_state.game_inst,(f32)0)) {
+      if (!app_state.game_inst->render(app_state.game_inst, (f32)0)) {
         KFATAL("GAME failed to render");
         app_state.is_running = FALSE;
         break;

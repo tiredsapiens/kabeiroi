@@ -1,0 +1,56 @@
+\doxysection{logger.\+h}
+\hypertarget{logger_8h_source}{}\label{logger_8h_source}\index{engine/src/core/logger.h@{engine/src/core/logger.h}}
+\mbox{\hyperlink{logger_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../defines.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ LOG\_WARN\_ENABLED\ 1}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ LOG\_INFO\_ENABLED\ 1}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ LOG\_DEBUG\_ENABLED\ 1}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LOG\_TRACE\_ENABLED\ 1}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#if\ KRELEASE\ ==\ 1}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ LOG\_DEBUG\_ENABLED\ 0}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ LOG\_TRACE\_ENABLED\ 0}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748e}{log\_level}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748ea779dc8dd26898fb0f88cd5f6e02ba1e5}{LOG\_LEVEL\_FATAL}}\ =\ 0,}
+\DoxyCodeLine{00016\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748ea5b40f003febbc3b535649d63f4b8a44f}{LOG\_LEVEL\_ERROR}}\ =\ 1,}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748ea99c1e5c8e6d557f3993b9ab54a0107f4}{LOG\_LEVEL\_WARN}}\ =\ 2,}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748eaedee1e3159bfe7d918b6e29873c5aee4}{LOG\_LEVEL\_INFO}}\ =\ 3,}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748ea538b2b6e011479d408ecd2be0f6d6177}{LOG\_LEVEL\_DEBUG}}\ =\ 4,}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748ea8fa9f12103da446ab4f3d3dc2fcf7f5d}{LOG\_LEVEL\_TRACE}}\ =\ 5,}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748e}{log\_level}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \mbox{\hyperlink{defines_8h_a7415f24c35cb3e16a79f143c5527fdfa}{b8}}\ \mbox{\hyperlink{logger_8h_aae701ec9fd1cbb624f28156730027305}{initialize\_logging}}();}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{logger_8h_a811866002a3bf25ead26b47687cfccdf}{shutdown\_logging}}();}
+\DoxyCodeLine{00025\ \mbox{\hyperlink{defines_8h_a0dc00ea56793277f556f072353318f35}{KAPI}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{logger_8h_a0c968c3f536c566594a9fd2d14dfedfc}{log\_output}}(\mbox{\hyperlink{logger_8h_ac91d55174d383848b976a34de843748e}{log\_level}}\ level,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ message,\ ...);}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ KFATAL(message,\ ...)\ log\_output(LOG\_LEVEL\_FATAL,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#ifndef\ KERROR}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ KERROR(message,\ ...)\ log\_output(LOG\_LEVEL\_ERROR,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#if\ LOG\_WARN\_ENABLED\ ==\ 1}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ KWARN(message,\ ...)\ log\_output(LOG\_LEVEL\_WARN,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ KWARN(message,\ ...)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#if\ LOG\_INFO\_ENABLED\ ==\ 1}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ KINFO(message,\ ...)\ log\_output(LOG\_LEVEL\_INFO,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ KINFO(message,\ ...)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#if\ LOG\_DEBUG\_ENABLED\ ==\ 1}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ KDEBUG(message,\ ...)\ log\_output(LOG\_LEVEL\_DEBUG,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ KDEBUG(message,\ ...)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#if\ LOG\_TRACE\_ENABLED\ ==\ 1}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ KTRACE(message,\ ...)\ log\_output(LOG\_LEVEL\_TRACE,\ message,\ \#\#\_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ KTRACE(message,\ ...)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

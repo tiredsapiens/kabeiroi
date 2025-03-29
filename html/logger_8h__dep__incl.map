@@ -1,0 +1,15 @@
+<map id="engine/src/core/logger.h" name="engine/src/core/logger.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="466,5,643,31"/>
+<area shape="rect" id="Node000002" href="$application_8c.html" title=" " alt="" coords="5,79,213,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,35,181,81,181,76,469,30"/>
+<area shape="rect" id="Node000003" href="$kmemeory_8c.html" title=" " alt="" coords="237,79,443,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="508,37,376,81,374,76,506,32"/>
+<area shape="rect" id="Node000004" href="$logger_8c.html" title=" " alt="" coords="467,79,643,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="557,44,557,79,552,79,552,44"/>
+<area shape="rect" id="Node000005" href="$entry_8h.html" title=" " alt="" coords="667,79,805,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="597,33,707,76,705,81,595,38"/>
+<area shape="rect" id="Node000007" href="$game_8c.html" title=" " alt="" coords="829,79,976,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="625,31,847,76,846,81,623,36"/>
+<area shape="rect" id="Node000006" href="$entry_8c.html" title=" " alt="" coords="665,152,807,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="739,118,739,152,733,152,733,118"/>
+</map>

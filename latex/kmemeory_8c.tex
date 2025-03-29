@@ -1,0 +1,90 @@
+\doxysection{engine/src/core/kmemeory.c File Reference}
+\hypertarget{kmemeory_8c}{}\label{kmemeory_8c}\index{engine/src/core/kmemeory.c@{engine/src/core/kmemeory.c}}
+{\ttfamily \#include "{}kmemeory.\+h"{}}\newline
+{\ttfamily \#include $<$core/logger.\+h$>$}\newline
+{\ttfamily \#include $<$platform/platform.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for kmemeory.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kmemeory_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmemory__stats}{memory\+\_\+stats}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{kmemeory_8c_a2bdce596545b593473158adc918b4e7f}{initialize\+\_\+memory}} ()
+\item 
+void \mbox{\hyperlink{kmemeory_8c_ab2ac446da30e1b8a9f0d88566041c7ec}{shutdown\+\_\+memory}} ()
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{kmemeory_8c_aaff7cb37687dfc7680be1a2101890d88}{kallocate}} (\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} size, \mbox{\hyperlink{kmemeory_8h_a37d016888ad6b70195335004614d4942}{memory\+\_\+tag}} tag)
+\item 
+void \mbox{\hyperlink{kmemeory_8c_a49e85a536f69ab06ccc689d5701450dc}{kfree}} (void \texorpdfstring{$\ast$}{*}block, \mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} size, \mbox{\hyperlink{kmemeory_8h_a37d016888ad6b70195335004614d4942}{memory\+\_\+tag}} tag)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{kmemeory_8c_aa7107b9ccb0c0358906c79d3dbe398d5}{kzero\+\_\+memory}} (void \texorpdfstring{$\ast$}{*}block, \mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{kmemeory_8c_a83a84048e2c12439e716e87f408ed4d5}{kcopy\+\_\+memory}} (void \texorpdfstring{$\ast$}{*}dst, const void \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{kmemeory_8c_a2a80291541bfd799993b25c748ebbe03}{kset\+\_\+memory}} (void \texorpdfstring{$\ast$}{*}dest, \mbox{\hyperlink{defines_8h_a9e3ad5f8e752f01d926ce122d5a5285e}{i32}} value, \mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} size)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{kmemeory_8c_a952570f1b67855783413d2a0d4b0503a}{get\+\_\+memory\+\_\+usage\+\_\+str}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kmemeory_8c_a952570f1b67855783413d2a0d4b0503a}\label{kmemeory_8c_a952570f1b67855783413d2a0d4b0503a} 
+\index{kmemeory.c@{kmemeory.c}!get\_memory\_usage\_str@{get\_memory\_usage\_str}}
+\index{get\_memory\_usage\_str@{get\_memory\_usage\_str}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{get\_memory\_usage\_str()}{get\_memory\_usage\_str()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} get\+\_\+memory\+\_\+usage\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_a2bdce596545b593473158adc918b4e7f}\label{kmemeory_8c_a2bdce596545b593473158adc918b4e7f} 
+\index{kmemeory.c@{kmemeory.c}!initialize\_memory@{initialize\_memory}}
+\index{initialize\_memory@{initialize\_memory}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_memory()}{initialize\_memory()}}
+{\footnotesize\ttfamily void initialize\+\_\+memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_aaff7cb37687dfc7680be1a2101890d88}\label{kmemeory_8c_aaff7cb37687dfc7680be1a2101890d88} 
+\index{kmemeory.c@{kmemeory.c}!kallocate@{kallocate}}
+\index{kallocate@{kallocate}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{kallocate()}{kallocate()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} kallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}]{size,  }\item[{\mbox{\hyperlink{kmemeory_8h_a37d016888ad6b70195335004614d4942}{memory\+\_\+tag}}}]{tag }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_a83a84048e2c12439e716e87f408ed4d5}\label{kmemeory_8c_a83a84048e2c12439e716e87f408ed4d5} 
+\index{kmemeory.c@{kmemeory.c}!kcopy\_memory@{kcopy\_memory}}
+\index{kcopy\_memory@{kcopy\_memory}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{kcopy\_memory()}{kcopy\_memory()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} kcopy\+\_\+memory (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{dst,  }\item[{const void \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}]{size }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_a49e85a536f69ab06ccc689d5701450dc}\label{kmemeory_8c_a49e85a536f69ab06ccc689d5701450dc} 
+\index{kmemeory.c@{kmemeory.c}!kfree@{kfree}}
+\index{kfree@{kfree}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{kfree()}{kfree()}}
+{\footnotesize\ttfamily void kfree (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{block,  }\item[{\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}]{size,  }\item[{\mbox{\hyperlink{kmemeory_8h_a37d016888ad6b70195335004614d4942}{memory\+\_\+tag}}}]{tag }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_a2a80291541bfd799993b25c748ebbe03}\label{kmemeory_8c_a2a80291541bfd799993b25c748ebbe03} 
+\index{kmemeory.c@{kmemeory.c}!kset\_memory@{kset\_memory}}
+\index{kset\_memory@{kset\_memory}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{kset\_memory()}{kset\_memory()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} kset\+\_\+memory (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{dest,  }\item[{\mbox{\hyperlink{defines_8h_a9e3ad5f8e752f01d926ce122d5a5285e}{i32}}}]{value,  }\item[{\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}]{size }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_aa7107b9ccb0c0358906c79d3dbe398d5}\label{kmemeory_8c_aa7107b9ccb0c0358906c79d3dbe398d5} 
+\index{kmemeory.c@{kmemeory.c}!kzero\_memory@{kzero\_memory}}
+\index{kzero\_memory@{kzero\_memory}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{kzero\_memory()}{kzero\_memory()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} kzero\+\_\+memory (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{block,  }\item[{\mbox{\hyperlink{defines_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}]{size }\end{DoxyParamCaption})}
+
+\Hypertarget{kmemeory_8c_ab2ac446da30e1b8a9f0d88566041c7ec}\label{kmemeory_8c_ab2ac446da30e1b8a9f0d88566041c7ec} 
+\index{kmemeory.c@{kmemeory.c}!shutdown\_memory@{shutdown\_memory}}
+\index{shutdown\_memory@{shutdown\_memory}!kmemeory.c@{kmemeory.c}}
+\doxysubsubsection{\texorpdfstring{shutdown\_memory()}{shutdown\_memory()}}
+{\footnotesize\ttfamily void shutdown\+\_\+memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,19 @@
+<map id="engine/src/core/logger.c" name="engine/src/core/logger.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="295,5,471,31"/>
+<area shape="rect" id="Node000002" href="$logger_8h.html" title=" " alt="" coords="5,79,80,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,33,94,81,93,76,324,28"/>
+<area shape="rect" id="Node000004" href="$platform_8h.html" title=" " alt="" coords="104,79,267,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="352,33,231,76,230,71,350,28"/>
+<area shape="rect" id="Node000005" href="$asserts_8h.html" title=" " alt="" coords="291,79,373,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="376,33,350,69,346,66,372,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="397,79,472,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="393,29,420,66,416,69,389,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="496,79,563,104"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="407,28,494,70,492,75,405,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="587,79,658,104"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="422,28,575,73,573,78,420,33"/>
+<area shape="rect" id="Node000003" href="$defines_8h.html" title=" " alt="" coords="139,152,232,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,102,151,143,149,148,64,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="188,104,188,138,183,138,183,104"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="310,106,223,148,220,144,307,102"/>
+</map>

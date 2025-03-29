@@ -2,7 +2,7 @@
 #include "game.h"
 #include <entry.h>
 //#include <core/kmemeory.h>
-#include "../../engine/src/core/kmemeory.h"
+#include "../../engine/src/core/kmemory.h"
 
 
 //definition to create the game

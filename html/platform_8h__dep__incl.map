@@ -1,0 +1,13 @@
+<map id="engine/src/platform/platform.h" name="engine/src/platform/platform.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="480,5,629,45"/>
+<area shape="rect" id="Node000002" href="$application_8c.html" title=" " alt="" coords="5,101,213,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="467,46,169,103,168,98,466,41"/>
+<area shape="rect" id="Node000003" href="$kmemeory_8c.html" title=" " alt="" coords="237,101,443,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="496,53,370,103,368,98,494,48"/>
+<area shape="rect" id="Node000004" href="$logger_8c.html" title=" " alt="" coords="467,101,643,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="557,59,557,100,552,100,552,59"/>
+<area shape="rect" id="Node000005" href="$platform__linux_8c.html" title=" " alt="" coords="667,93,816,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="609,49,702,91,699,96,607,53"/>
+<area shape="rect" id="Node000006" href="$platform__win32_8c.html" title=" " alt="" coords="840,93,989,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="644,45,840,92,839,97,642,50"/>
+</map>

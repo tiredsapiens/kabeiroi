@@ -1,0 +1,19 @@
+<map id="engine/src/core/application.c" name="engine/src/core/application.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,352,31"/>
+<area shape="rect" id="Node000002" href="$application_8h.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,33,127,51,105,64,86,80,70,109,63,139,58,138,65,107,82,77,102,60,125,46,174,28"/>
+<area shape="rect" id="Node000004" href="$platform_8h.html" title=" " alt="" coords="136,152,299,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,32,225,139,220,138,243,31"/>
+<area shape="rect" id="Node000005" href="$logger_8h.html" title=" " alt="" coords="323,152,397,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="259,29,345,140,341,143,255,33"/>
+<area shape="rect" id="Node000006" href="$game__types_8h.html" title=" " alt="" coords="96,79,211,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="234,33,181,72,178,68,231,29"/>
+<area shape="rect" id="Node000007" href="$kmemeory_8h.html" title=" " alt="" coords="359,79,494,104"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="278,28,386,71,384,76,276,33"/>
+<area shape="rect" id="Node000003" href="$defines_8h.html" title=" " alt="" coords="241,225,335,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,175,238,219,237,224,95,180"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="231,176,269,214,265,218,227,180"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="350,180,311,218,308,214,346,176"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="140,106,87,146,84,141,137,102"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="430,105,427,140,422,160,411,179,382,205,348,223,346,218,379,201,407,176,417,158,422,139,425,104"/>
+</map>

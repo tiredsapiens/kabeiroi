@@ -1,4 +1,4 @@
-#include "kmemeory.h"
+#include "kmemory.h"
 #include <core/logger.h>
 #include <platform/platform.h>
 #include <stdio.h>

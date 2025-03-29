@@ -2,7 +2,8 @@
 #include "../platform/platform.h"
 #include "logger.h"
 #include "game_types.h"
-#include  "core/kmemeory.h"
+#include  "core/kmemory.h"
+#include "core/event.h"
 
 typedef struct application_state {
   game *game_inst;
@@ -36,11 +37,17 @@ b8 application_create(game *game_inst) {
   app_state.is_suspended = FALSE;
 
   platform_state state;
+  if (!event_initialize()) {
+    KERROR("Failed to initialize event");
+    return FALSE;
+  }
   b8 result =
       platform_startup(&app_state.platform, game_inst->app_config.name,
                        game_inst->app_config.start_pos_x, game_inst->app_config.start_pos_y,
                        game_inst->app_config.start_width, game_inst->app_config.start_height);
   if (!result) {
+
+    KERROR("Failed to startup platform");
     return FALSE;
   }
   if (!app_state.game_inst->initialize(app_state.game_inst)) {
@@ -72,6 +79,7 @@ b8 application_run() {
     }
   }
   app_state.is_running = FALSE;
+  event_shutdown();
   platform_shutdown(&app_state.platform);
   return TRUE;
 }
